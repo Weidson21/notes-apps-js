@@ -30,3 +30,30 @@ input[type = "text"]{
     padding: 9px;
 }
 
+.adicionar{
+    position: absolute;
+    top: 730px;
+    left: 250px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f0f02d;
+    border: none;
+}
+
+.largura{
+    position: relative;
+    top: 13px;
+    background-color: black;
+    width: 50%;
+    height: 3px;
+    margin: auto;
+}
+
+.altura{
+    position: relative;
+    background-color: black;
+    width: 3px;
+    height: 25px;
+    margin: auto;
+}
