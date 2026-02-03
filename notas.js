@@ -64,4 +64,15 @@ bntAdicionar.addEventListener("click", () =>{
     span.classList.add("span");
 
     header.append(imgVoltar, span);
+
+    function voltar(){
+        listaNotas.style.display = "none";
+        containerInput.style.display = "block";
+        document.querySelector(".cabeçalho").innerHTML = "Meus Blocos de Nota";
+        imgVoltar.remove();
+        span.remove();
+    }
+
+    imgVoltar.addEventListener("click", voltar);
+    span.addEventListener("click", voltar);
 });

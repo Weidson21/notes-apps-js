@@ -112,6 +112,7 @@ p button{
     height: 40px;
     margin-top: 100px;
     padding: 5px;
+    border-radius: 10px;
     border: none;
 }
 
