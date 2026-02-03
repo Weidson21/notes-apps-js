@@ -32,7 +32,7 @@ function criarNota(texto, categoria){
 }
 
 function renderizar(){
-    listaNotas.innerHTML = "";
+    containerInput.innerHTML = "";
 
     notas.forEach(nota => {
         const div = document.createElement("div");
@@ -43,13 +43,14 @@ function renderizar(){
         <p>${nota.texto}</p>
         <small>${nota.categoria}</small>`;
 
-        listaNotas.appendChild(div);
+        containerInput.appendChild(div);
     });
 }
 
+listaNotas.style.display = "none"
 bntAdicionar.addEventListener("click", () =>{
     containerInput.style.display = "none";
-    listaNotas.style.isplay = "none";
+    listaNotas.style.display = "block"
     
     document.querySelector(".cabeçalho").innerHTML = "Editar Nota";
 
