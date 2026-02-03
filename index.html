@@ -7,19 +7,42 @@
     <title>Notes app</title>
 </head>
 <body>
-    <header>
-        <h1>Meus Blocos de Notas</h1>
+    <header class="header">
+        <h1 class="cabeçalho">Meus Blocos de Notas</h1>
     </header>
     <main>
-        <section class="container-input">
+        <section class="container-input active">
             <input type="text" id="notas" placeholder="🔍 Buscar notas...">
             <button class="adicionar">
                 <div class="largura"></div>
                 <div class="altura"></div>
             </button>
         </section>
-        <section class="container-notas">
+        <section class="container-notas active">
+            <select id="categoria">
+                <option value="projetos">Projetos</option>
+                <option value="estudos">Estudos</option>
+                <option value="compras">Compras</option>
+                <option value="faculdade">Faculdade</option>
+            </select>
+            <p>
+                <label for="titulo" >Título </label>
+                <input type="text" id="titulo">
+            </p>
 
+            <p>
+                <label for="texto" id="text">Texto</label>
+                <textarea id="texto">
+                </textarea>
+            </p>
+            <p class="data-criação"></p>
+            <p class="button">
+                <button type="button" class="excluir">
+                    <img src="imagens/icons8-lixeira-30.png" alt="deletar">Deletar</button>
+
+                <button type="button" class="salvar">
+                    <img src="imagens/icons8-salvar-24.png" alt="salvar">Salvar</button>
+            </p>
         </section>
     </main>
     <script src="notas.js"></script>

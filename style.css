@@ -9,7 +9,7 @@
 *::before{box-sizing: border-box;}
 
 html, body{
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(231, 230, 230);
 }
 
 header{
@@ -41,6 +41,10 @@ input[type = "text"]{
     border: none;
 }
 
+.adicionar:hover{
+    background-color: white;
+}
+
 .largura{
     position: relative;
     top: 13px;
@@ -56,4 +60,88 @@ input[type = "text"]{
     width: 3px;
     height: 25px;
     margin: auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+select{
+    margin: 10px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+label{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    margin-left: 3px;
+}
+
+label#text{
+    top: 1px;
+    left: 10px;
+}
+
+input{
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+}
+
+textarea{
+    background-color: rgba(255, 255, 0, 0.377);
+    width: 95%;
+    height: 250px;
+    margin-left: 9px;
+    border-radius: 10px;
+    border: none;
+}
+
+.button{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+p button{
+    font-size: 1.1rem;
+    color: white;
+    width: 45%;
+    height: 40px;
+    margin-top: 100px;
+    padding: 5px;
+    border: none;
+}
+
+p button:nth-child(1){
+    background-color: red;
+}
+
+p button:nth-child(2){
+    background-color: blue;
+}
+
+button img {
+    position: relative;
+    left: -20px;
+    top: 2px;
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+/* Criado em javascript*/
+.voltar{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+}
+
+.span{
+    position: absolute;
+    top: 22px;
+    left: 40px;
 }
